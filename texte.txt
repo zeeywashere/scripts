@@ -1,0 +1,20 @@
+local amount = 100
+local size = Vector3.new(6, 1, 6)
+local areaSize = 200
+
+for i = 1, amount do
+    local part = Instance.new("Part")
+    part.Size = size
+    part.Anchored = true
+    part.CanCollide = true
+    part.Transparency = 1
+    part.Name = "metoro level"
+
+    part.Position = Vector3.new(
+        math.random(-areaSize, areaSize),
+        math.random(10, 50),
+        math.random(-areaSize, areaSize)
+    )
+
+    part.Parent = workspace
+end
