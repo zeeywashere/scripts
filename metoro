@@ -18,3 +18,4 @@ for i = 1, amount do
 
     part.Parent = workspace
 end
+
